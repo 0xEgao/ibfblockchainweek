@@ -7,7 +7,7 @@ const EventGallery = () => {
   const events = [
     {
       id: 1,
-      url: "src/assets/g1.jpg",
+      url: "/public/assets/g1.jpg",
       title: "Web3 Summit 2025",
       date: "March 15, 2025",
       description: "Exploring the future of decentralized technologies",
