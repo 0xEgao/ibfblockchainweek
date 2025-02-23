@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import WorkshopAgenda from './WorkshopAgenda';
-import ModernWorkshop from './ModernWorkShop';
+import ModernWorkshop from './ModernWorkshop';
 import SponsorsSection from './SponsorsSection';
 import BlockchainClub from './BlockchainClub';
 import ImageGallery from './ImageGallery';
