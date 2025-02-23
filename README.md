@@ -9,3 +9,4 @@ Currently, two official plugins are available:
 # Ibf
 # ibfblockchainweek
 # ibfblockchainweek
+# ibfblockchainweek
