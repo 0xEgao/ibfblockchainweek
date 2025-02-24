@@ -62,15 +62,16 @@ const ModernWorkshop = () => {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(76,29,149,0.2),transparent_70%)] animate-pulse" />
         </div>
 
-        <div className="text-center mb-16 relative">
-          <h1 className="text-6xl font-bold bg-gradient-to-r from-indigo-500 via-blue-500 to-violet-500 text-transparent bg-clip-text mb-6 hover:scale-105 transition-transform duration-300">
-            BLOCKCHAIN WEEK 2025
-          </h1>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto hover:text-gray-300 transition-colors duration-300">
-            Join an exclusive cohort of 80 students for an immersive blockchain development journey. 
-            Master Solidity, build dApps, and connect with industry leaders.
-          </p>
-        </div>
+        <div className="text-center mb-16 relative px-4 sm:px-6 lg:px-8">
+  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold bg-gradient-to-r from-indigo-500 via-blue-500 to-violet-500 text-transparent bg-clip-text mb-6 hover:scale-105 transition-transform duration-300 max-w-7xl mx-auto">
+    BLOCKCHAIN WEEK 2025
+  </h1>
+  <p className="text-gray-400 text-base sm:text-lg md:text-xl max-w-2xl mx-auto hover:text-gray-300 transition-colors duration-300">
+    Join an exclusive cohort of 80 students for an immersive blockchain development journey. 
+    Master Solidity, build dApps, and connect with industry leaders.
+  </p>
+</div>
+
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cards.map((card) => (

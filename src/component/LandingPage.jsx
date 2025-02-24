@@ -126,20 +126,22 @@ const LandingPage = () => {
                 <span className="text-indigo-500 text-2xl sm:text-3xl md:text-5xl">Dive into Future withWeb3</span>
               </h1>
               <p className="text-gray-400 text-base sm:text-lg md:text-3xl max-w-3xl mx-auto">
-                APRIL 15TH - 20TH 2024
+                APRIL 15TH - 20TH 2025
               </p>
             </div>
 
+            
+
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
-              <Button onClick={() => window.open('#', '_blank')} className="text-base sm:text-lg">Join Today</Button>
+              <Button onClick={() => window.open('#', '_blank')} className="text-base sm:text-lg ">Join Today</Button>
               <Button onClick={() => handleNavigate('workshop')} variant="outline" className="text-base sm:text-lg">Learn More</Button>
             </div>
 
             {/* Feature Badge */}
             <div className="pt-8 sm:pt-12">
               <span className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-gray-800/50 backdrop-blur-sm border border-gray-700">
-                <span className="text-gray-300 text-sm sm:text-base">Beyond the chain payment</span>
+                <span className="text-gray-300 text-sm sm:text-base ">Beyond the chain payment</span>
               </span>
             </div>
           </div>

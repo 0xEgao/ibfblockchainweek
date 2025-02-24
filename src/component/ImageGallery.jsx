@@ -35,21 +35,21 @@ const EventGallery = () => {
       title: "NFT Exhibition",
       date: "January 25, 2025",
       description: "Showcasing digital art on the blockchain",
-      attendees: "400+ Artists & Collectors"
+      attendees: "170+ participants"
     },
     {
       id: 5,
       url: "/images/3.JPG",  // Updated path
-      title: "Crypto Trading Workshop",
-      date: "January 15, 2025",
+      title: "Aptos Workshop",
+      date: "August 20, 2024",
       description: "Advanced trading strategies in crypto markets",
-      attendees: "250+ Traders"
+      attendees: "250+ participants"
     },
     {
       id: 6,
       url: "/images/g8.jpeg",  // Updated path
-      title: "Metaverse Expo",
-      date: "January 5, 2025",
+      title: "BlockChain Week 2024",
+      date: "January 15, 2024",
       description: "Virtual reality meets blockchain technology",
       attendees: "600+ Participants"
     }

@@ -315,9 +315,9 @@ At IBF, we believe that blockchain is the future, and we aim to bridge the gap b
                   <h3 className="text-lg font-semibold">Contact Information</h3>
                   <div className="space-y-2">
                     <p className="text-gray-400 flex items-center gap-2">
-                      <Mail /> blockchain.club@example.com
+                      <Mail /> ibf.bu@bennett.edu.in
                     </p>
-                    <p className="text-gray-400">Location: Tech Building, Room 301</p>
+                    <p className="text-gray-400">Location: Bennett University</p>
                   </div>
                 </div>
                 <div className="space-y-4">
