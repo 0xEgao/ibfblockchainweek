@@ -7,9 +7,6 @@ import ImageGallery from './ImageGallery';
 import Footer from './Footer';
 import { Bitcoin } from 'lucide-react';
 
-
-
-
 const Button = ({ children, className, variant = 'default', onClick }) => {
   const baseStyles = "px-4 sm:px-6 py-2 rounded-lg font-medium transition-all duration-200 w-full sm:w-auto";
   const variants = {
@@ -115,10 +112,8 @@ const LandingPage = () => {
 
       {/* Main Content */}
       <div className="relative z-10">
-        {/* Hero Section */}
         <main id="home" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 text-center scroll-mt-24">
           <div className="space-y-8 py-16 sm:py-32">
-            {/* Main Heading */}
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold text-white">
                 BLOCKCHAIN WEEK{' '}
@@ -129,8 +124,6 @@ const LandingPage = () => {
                 APRIL 14TH - 20TH 2025
               </p>
             </div>
-
-            
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
@@ -147,12 +140,8 @@ const LandingPage = () => {
           </div>
         </main>
 
-        {/* Floating Elements */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[800px] h-[300px] sm:h-[800px] rounded-full border border-gray-800 opacity-20"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] sm:w-[600px] h-[200px] sm:h-[600px] rounded-full border border-gray-800 opacity-30"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100px] sm:w-[400px] h-[100px] sm:h-[400px] rounded-full border border-gray-800 opacity-40"></div>
+        {/* Floating Elements Section Removed */}
       </div>
-
       
       {/* <div className="relative z-10 max-w-7xl font-co mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-32">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8">
