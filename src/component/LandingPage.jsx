@@ -126,7 +126,7 @@ const LandingPage = () => {
                 <span className="text-indigo-500 text-2xl sm:text-3xl md:text-5xl">Dive into Future withWeb3</span>
               </h1>
               <p className="text-gray-400 text-base sm:text-lg md:text-3xl max-w-3xl mx-auto">
-                APRIL 15TH - 20TH 2025
+                APRIL 14TH - 20TH 2025
               </p>
             </div>
 
@@ -153,8 +153,8 @@ const LandingPage = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100px] sm:w-[400px] h-[100px] sm:h-[400px] rounded-full border border-gray-800 opacity-40"></div>
       </div>
 
-      {/* Feature Grid */}
-      <div className="relative z-10 max-w-7xl font-co mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-32">
+      
+      {/* <div className="relative z-10 max-w-7xl font-co mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-32">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8">
           {[
             {
@@ -179,7 +179,7 @@ const LandingPage = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Sections with proper scroll margins */}
       <div id="timeline" className="scroll-mt-24"></div>
