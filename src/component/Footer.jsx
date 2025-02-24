@@ -23,7 +23,7 @@ const Footer = () => {
     const developerInfo = {
         name: 'Rahul Gujjar',
         role: 'Website Developer',
-        image: 'src/assets/rahul1.jpg',
+        image: '/images/rahul1.jpg',
         ethereum_address: 'Tech Team Member'
     };
 

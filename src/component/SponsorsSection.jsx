@@ -18,7 +18,7 @@ const SPONSORS_DATA = [
   },
   {
     name: "Spheron",
-    image: "src/assets/spherelogo.png",
+    image: "/images/spherelogo.png",
     color: "from-indigo-600 to-violet-500"
   },
   {

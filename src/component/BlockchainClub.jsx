@@ -201,17 +201,17 @@ At IBF, we believe that blockchain is the future, and we aim to bridge the gap b
                   <PhotoGallery 
                     images={[
                       {
-                        url: "src/assets/1.jpeg",
+                        url: "/images/1.jpeg",
                         alt: "Team Photo",
                         description: "Our amazing team at the annual blockchain conference"
                       },
                       {
-                        url: "src/assets/2.jpeg",
+                        url: "/images/2.jpeg",
                         alt: "Workshop",
                         description: "Smart Contract Development Workshop"
                       },
                       {
-                        url: "src/assets/g4.JPG",
+                        url: "/images/g4.JPG",
                         alt: "Hackathon",
                         description: "Winners of the 2024 Blockchain Hackathon"
                       }
@@ -234,7 +234,7 @@ At IBF, we believe that blockchain is the future, and we aim to bridge the gap b
         <div className="text-center ">
           <div className="w-80 h-80 mx-auto mb-4 overflow-hidden rounded group">
             <img
-              src="src/assets/president.jpeg"
+              src="/images/president.jpeg"
               alt="President"
               className="w-full h-full object-cover transition-transform duration-500 scale-110 group-hover:scale-150 ml-10"
             />
@@ -254,7 +254,7 @@ At IBF, we believe that blockchain is the future, and we aim to bridge the gap b
         <div className="text-center">
           <div className="w-80 h-80 mx-auto mb-4 overflow-hidden rounded group">
             <img
-              src="src/assets/vc.jpeg"
+              src="/images/vc.jpeg"
               alt="Vice President"
               className="w-full h-full object-cover transition-transform duration-500 scale-110 group-hover:scale-150"
             />

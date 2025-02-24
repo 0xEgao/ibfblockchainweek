@@ -6,7 +6,9 @@ import BlockchainClub from './BlockchainClub';
 import ImageGallery from './ImageGallery';
 import Footer from './Footer';
 import { Bitcoin } from 'lucide-react';
-import BitcoinFlip from './BitcoinFlip';
+
+
+
 
 const Button = ({ children, className, variant = 'default', onClick }) => {
   const baseStyles = "px-4 sm:px-6 py-2 rounded-lg font-medium transition-all duration-200 w-full sm:w-auto";

@@ -7,7 +7,7 @@ const EventGallery = () => {
   const events = [
     {
       id: 1,
-      url: "/public/assets/g1.jpg",
+      url: "/images/g1.jpg",  // Updated path
       title: "Web3 Summit 2025",
       date: "March 15, 2025",
       description: "Exploring the future of decentralized technologies",
@@ -15,7 +15,7 @@ const EventGallery = () => {
     },
     {
       id: 2,
-      url: "src/assets/g5.JPG",
+      url: "/images/g5.JPG",  // Updated path
       title: "DeFi Conference",
       date: "February 28, 2025",
       description: "Latest innovations in decentralized finance",
@@ -23,7 +23,7 @@ const EventGallery = () => {
     },
     {
       id: 3,
-      url: "src/assets/g7.JPG",
+      url: "/images/g7.JPG",  // Updated path
       title: "Blockchain Developer Meetup",
       date: "February 10, 2025",
       description: "Technical deep-dive into blockchain development",
@@ -31,7 +31,7 @@ const EventGallery = () => {
     },
     {
       id: 4,
-      url: "src/assets/g2.jpg",
+      url: "/images/g2.jpg",  // Updated path
       title: "NFT Exhibition",
       date: "January 25, 2025",
       description: "Showcasing digital art on the blockchain",
@@ -39,7 +39,7 @@ const EventGallery = () => {
     },
     {
       id: 5,
-      url: "src/assets/3.JPG",
+      url: "/images/3.JPG",  // Updated path
       title: "Crypto Trading Workshop",
       date: "January 15, 2025",
       description: "Advanced trading strategies in crypto markets",
@@ -47,7 +47,7 @@ const EventGallery = () => {
     },
     {
       id: 6,
-      url: "src/assets/g8.jpeg",
+      url: "/images/g8.jpeg",  // Updated path
       title: "Metaverse Expo",
       date: "January 5, 2025",
       description: "Virtual reality meets blockchain technology",
