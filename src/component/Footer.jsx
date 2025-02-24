@@ -222,7 +222,7 @@ const Footer = () => {
                         <p className="text-white text-sm flex items-center gap-2">
                             Made with 
                             <span className="text-[#6366f1] animate-pulse">❤</span>
-                            by the Rahul Gujjar
+                            by  Rahul Gujjar
                         </p>
                     </div>
                 </div>
