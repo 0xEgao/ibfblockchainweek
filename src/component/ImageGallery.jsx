@@ -8,8 +8,8 @@ const EventGallery = () => {
     {
       id: 1,
       url: "/images/g1.jpg",  // Updated path
-      title: "Web3 Summit 2025",
-      date: "March 15, 2025",
+      title: "Web3 Summit 2024",
+      date: "March 15, 2024",
       description: "Exploring the future of decentralized technologies",
       attendees: "500+ Web3 Enthusiasts"
     },
