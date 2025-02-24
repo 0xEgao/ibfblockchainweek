@@ -3,11 +3,10 @@ import React, { useState } from 'react';
 export default function BlockchainClub() {
   const [activeTab, setActiveTab] = useState("about");
 
-  // Custom Card Components with enhanced hover and shadow effects
   function Card({ children, className = "", hover = true }) {
     return (
       <div className={`
-        rounded-lg border border-gray-800 bg-black/40 backdrop-blur-sm
+        rounded-lg border border-gray-800 bg-black/40 backdrop-blur-sm w-full
         ${hover ? 'transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/20 hover:-translate-y-1' : ''}
         ${className}
       `}>
@@ -18,29 +17,28 @@ export default function BlockchainClub() {
 
   function CardHeader({ children }) {
     return (
-      <div className="flex flex-col space-y-1.5 p-6">{children}</div>
+      <div className="flex flex-col space-y-1.5 p-4 sm:p-6">{children}</div>
     );
   }
 
   function CardTitle({ children }) {
     return (
-      <h3 className="text-2xl font-semibold text-white">{children}</h3>
+      <h3 className="text-xl sm:text-2xl font-semibold text-white">{children}</h3>
     );
   }
 
   function CardDescription({ children }) {
     return (
-      <p className="text-gray-400">{children}</p>
+      <p className="text-sm sm:text-base text-gray-400">{children}</p>
     );
   }
 
   function CardContent({ children, className = "" }) {
     return (
-      <div className={`p-6 pt-0 ${className}`}>{children}</div>
+      <div className={`p-4 sm:p-6 pt-0 ${className}`}>{children}</div>
     );
   }
 
-  // Enhanced Badge Component with hover effect
   function Badge({ children }) {
     return (
       <span className="px-2 py-1 text-xs font-semibold rounded-full bg-indigo-600 text-white transition-all duration-300 hover:bg-indigo-700">
@@ -49,10 +47,9 @@ export default function BlockchainClub() {
     );
   }
 
-  // Photo Gallery Component
   function PhotoGallery({ images }) {
     return (
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {images.map((img, index) => (
           <div 
             key={index} 
@@ -72,7 +69,7 @@ export default function BlockchainClub() {
     );
   }
 
-  // [Previous Icon Components remain unchanged]
+  // Icon components remain unchanged
   function BookOpen() {
     return (
       <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -117,7 +114,7 @@ export default function BlockchainClub() {
     <button
       className={`
         flex items-center gap-2 justify-center p-2 transition-all duration-300
-        hover:bg-black/50 rounded-lg
+        hover:bg-black/50 rounded-lg text-sm sm:text-base
         ${activeTab === value 
           ? "border-b-2 border-indigo-500 text-indigo-500 shadow-lg shadow-indigo-500/20" 
           : "text-gray-400"}
@@ -125,79 +122,72 @@ export default function BlockchainClub() {
       onClick={() => setActiveTab(value)}
     >
       <Icon />
-      {label}
+      <span className="hidden sm:inline">{label}</span>
     </button>
   );
 
   return (
-    <div className="min-h-screen bg-[#0A0B0F] text-gray-100 p-6">
-      {/* Enhanced Hero Section with Gradient Background */}
-      <div className="mb-12 text-center relative">
+    <div className="min-h-screen bg-[#0A0B0F] text-gray-100 p-4 sm:p-6">
+      <div className="mb-8 sm:mb-12 text-center relative">
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/20 via-transparent to-emerald-500/20 blur-[100px] -z-10"></div>
-        <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-500 to-emerald-500 text-transparent bg-clip-text">
-        Indian Blockchain Fraternity
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-500 to-emerald-500 text-transparent bg-clip-text">
+          Indian Blockchain Fraternity
         </h1>
-        <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-        Decentralizing Ideas, Empowering Minds.
+        <p className="text-gray-400 max-w-2xl mx-auto text-base sm:text-lg">
+          Decentralizing Ideas, Empowering Minds.
         </p>
       </div>
 
-      {/* Main Content */}
       <div className="max-w-6xl mx-auto">
-        {/* Enhanced Tabs List */}
-        <div className="grid w-full grid-cols-4 mb-8 bg-black/50 p-2 rounded-lg backdrop-blur-sm">
+        <div className="grid w-full grid-cols-4 mb-6 sm:mb-8 bg-black/50 p-2 rounded-lg backdrop-blur-sm">
           <TabButton icon={BookOpen} label="About" value="about" />
           <TabButton icon={Users} label="Leadership" value="leadership" />
           <TabButton icon={Calendar} label="Activities" value="activities" />
           <TabButton icon={Mail} label="Contact" value="contact" />
         </div>
 
-        {/* [Previous Tab Content Sections remain unchanged] */}
         {activeTab === "about" && (
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             <Card>
               <CardHeader>
-                <CardTitle className= "font-extrabold"><b> Indian Blockchain Fraternity </b></CardTitle>
+                <CardTitle className="font-extrabold">Indian Blockchain Fraternity</CardTitle>
                 <CardDescription>
-                The Indian Blockchain Fraternity (IBF) is the official blockchain club of Bennett University, dedicated to empowering students with knowledge, skills, and opportunities in the world of blockchain and Web3.
-At IBF, we believe that blockchain is the future, and we aim to bridge the gap between students and the industry by fostering a strong community of developers, enthusiasts, and innovators.
+                  The Indian Blockchain Fraternity (IBF) is the official blockchain club of Bennett University, dedicated to empowering students with knowledge, skills, and opportunities in the world of blockchain and Web3.
+                  At IBF, we believe that blockchain is the future, and we aim to bridge the gap between students and the industry by fostering a strong community of developers, enthusiasts, and innovators.
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <CardContent className="space-y-6 sm:space-y-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                   <div className="space-y-4">
-                    <h3 className="text-xl font-semibold mb-2">Our Mission</h3>
-                    <p className="text-gray-400">
-                    At IBF, our mission is to educate, innovate, and connect students in the blockchain space. We aim to: <br /> </p>
-                    <li>📚 Educate through workshops, mentorship, and hands-on learning.</li>  
-<li>💡 Innovate by fostering real-world blockchain projects.</li>  
-<li>🤝 Connect students with industry leaders and startups.</li>  
-<li>🏆 Create opportunities via hackathons, competitions, and events.</li>  
-<li>🚀 Inspire leadership in the evolving Web3 ecosystem.</li>  
-<li>🌍 We are committed to shaping the next generation of blockchain pioneers!</li>
-
-
-                
+                    <h3 className="text-lg sm:text-xl font-semibold mb-2">Our Mission</h3>
+                    <p className="text-gray-400">At IBF, our mission is to educate, innovate, and connect students in the blockchain space. We aim to:</p>
+                    <ul className="space-y-2 text-sm sm:text-base">
+                      <li>📚 Educate through workshops, mentorship, and hands-on learning.</li>
+                      <li>💡 Innovate by fostering real-world blockchain projects.</li>
+                      <li>🤝 Connect students with industry leaders and startups.</li>
+                      <li>🏆 Create opportunities via hackathons, competitions, and events.</li>
+                      <li>🚀 Inspire leadership in the evolving Web3 ecosystem.</li>
+                      <li>🌍 We are committed to shaping the next generation of blockchain pioneers!</li>
+                    </ul>
                   </div>
                   <div className="space-y-4">
-                    <h3 className="text-xl font-semibold mb-2">What We Do</h3>
-                    <ul className="list-disc list-inside text-gray-400 space-y-2">
-                    <li>🚀 Host workshops on blockchain, NFTs & DeFi.</li>  
-<li>💡 Organize hackathons with mentorship & prizes.</li>  
-<li>🤝 Collaborate with top blockchain firms & startups.</li>  
-<li>👥 Build a community of Web3 enthusiasts.</li>  
-<li>🌍 Connect students with industry leaders & experts.</li>  
-<li>🎯 Encourage real-world projects & open-source contributions.</li>   
-<li>🔗 Conduct hands-on training on smart contracts & dApps.</li>  
-<li>📢 Spread awareness about decentralization & Web3 adoption.</li>  
-<li>🏅 Recognize and reward top talent in blockchain development.</li>  
-
+                    <h3 className="text-lg sm:text-xl font-semibold mb-2">What We Do</h3>
+                    <ul className="list-disc list-inside text-gray-400 space-y-2 text-sm sm:text-base">
+                      <li>🚀 Host workshops on blockchain, NFTs & DeFi.</li>
+                      <li>💡 Organize hackathons with mentorship & prizes.</li>
+                      <li>🤝 Collaborate with top blockchain firms & startups.</li>
+                      <li>👥 Build a community of Web3 enthusiasts.</li>
+                      <li>🌍 Connect students with industry leaders & experts.</li>
+                      <li>🎯 Encourage real-world projects & open-source contributions.</li>
+                      <li>🔗 Conduct hands-on training on smart contracts & dApps.</li>
+                      <li>📢 Spread awareness about decentralization & Web3 adoption.</li>
+                      <li>🏅 Recognize and reward top talent in blockchain development.</li>
                     </ul>
                   </div>
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="text-xl font-semibold">Club Highlights</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold">Club Highlights</h3>
                   <PhotoGallery 
                     images={[
                       {
@@ -223,24 +213,25 @@ At IBF, we believe that blockchain is the future, and we aim to bridge the gap b
           </div>
         )}
 
+
         {/* [Rest of the tab content components remain unchanged] */}
 {/* Previous code remains unchanged until leadership section */}
 
 {activeTab === "leadership" && (
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-10 max-w-4xl mx-auto px-4 sm:px-0">
     {/* President Card */}
-    <Card className=''>
+    <Card className="w-full">
       <CardContent className="pt-6">
-        <div className="text-center ">
-          <div className="w-80 h-80 mx-auto mb-4 overflow-hidden rounded group">
+        <div className="text-center">
+          <div className="w-full h-64 sm:h-72 lg:h-80 mx-auto mb-4 overflow-hidden rounded group">
             <img
               src="/images/president.jpeg"
               alt="President"
-              className="w-full h-full object-cover transition-transform duration-500 scale-110 group-hover:scale-150 ml-10"
+              className="w-full h-full object-cover transition-transform duration-500 scale-110 group-hover:scale-150"
             />
           </div>
-          <h3 className="text-xl font-semibold mb-1">Aditya krishna sharma</h3>
-          <Badge >President</Badge>
+          <h3 className="text-lg sm:text-xl font-semibold mb-1">Aditya krishna sharma</h3>
+          <Badge>President</Badge>
           <p className="text-gray-400 text-sm mt-2">
             Blockchain Developer & Researcher
           </p>
@@ -249,17 +240,17 @@ At IBF, we believe that blockchain is the future, and we aim to bridge the gap b
     </Card>
 
     {/* Vice President Card */}
-    <Card >
+    <Card className="w-full">
       <CardContent className="pt-6">
         <div className="text-center">
-          <div className="w-80 h-80 mx-auto mb-4 overflow-hidden rounded group">
+          <div className="w-full h-64 sm:h-72 lg:h-80 mx-auto mb-4 overflow-hidden rounded group">
             <img
               src="/images/vc.jpeg"
               alt="Vice President"
-              className="w-full h-full object-cover transition-transform duration-500 scale-110 group-hover:scale-150"
+              className="w-full h-full object-cover transition-transform duration-500 scale-105 group-hover:scale-125"
             />
           </div>
-          <h3 className="text-xl font-semibold mb-1">Indresh Agrawal</h3>
+          <h3 className="text-lg sm:text-xl font-semibold mb-1">Indresh Agrawal</h3>
           <Badge>Vice President</Badge>
           <p className="text-gray-400 text-sm mt-2">
             Smart Contract Specialist
@@ -270,68 +261,67 @@ At IBF, we believe that blockchain is the future, and we aim to bridge the gap b
   </div>
 )}
 
-{/* Rest of the code remains unchanged */}
-        {activeTab === "activities" && (
-          <Card>
-            <CardHeader>
-              <CardTitle>Upcoming Events</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <div className="p-4 rounded-lg bg-black/40 hover:bg-black/60 transition-colors duration-300">
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold">Blockchain Workshop</h3>
-                    <Badge>Next Week</Badge>
-                  </div>
-                  <p className="text-gray-400 mt-2">
-                    Introduction to Smart Contracts Development
-                  </p>
-                </div>
-                <div className="p-4 rounded-lg bg-black/40 hover:bg-black/60 transition-colors duration-300">
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold">Guest Speaker Series</h3>
-                    <Badge>Upcoming</Badge>
-                  </div>
-                  <p className="text-gray-400 mt-2">
-                    Web3 and the Future of Finance
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        )}
+{activeTab === "activities" && (
+  <Card className="mx-4 sm:mx-auto max-w-4xl">
+    <CardHeader>
+      <CardTitle>Upcoming Events</CardTitle>
+    </CardHeader>
+    <CardContent>
+      <div className="space-y-4">
+        <div className="p-4 rounded-lg bg-black/40 hover:bg-black/60 transition-colors duration-300">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:justify-between">
+            <h3 className="text-base sm:text-lg font-semibold">Blockchain Workshop</h3>
+            <Badge>Next Week</Badge>
+          </div>
+          <p className="text-gray-400 mt-2 text-sm sm:text-base">
+            Introduction to Smart Contracts Development
+          </p>
+        </div>
+        <div className="p-4 rounded-lg bg-black/40 hover:bg-black/60 transition-colors duration-300">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:justify-between">
+            <h3 className="text-base sm:text-lg font-semibold">Guest Speaker Series</h3>
+            <Badge>Upcoming</Badge>
+          </div>
+          <p className="text-gray-400 mt-2 text-sm sm:text-base">
+            Web3 and the Future of Finance
+          </p>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+)}
 
-        {activeTab === "contact" && (
-          <Card>
-            <CardHeader>
-              <CardTitle>Get in Touch</CardTitle>
-              <CardDescription>
-                Join our community or reach out with questions
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
-                <div className="space-y-4">
-                  <h3 className="text-lg font-semibold">Contact Information</h3>
-                  <div className="space-y-2">
-                    <p className="text-gray-400 flex items-center gap-2">
-                      <Mail /> ibf.bu@bennett.edu.in
-                    </p>
-                    <p className="text-gray-400">Location: Bennett University</p>
-                  </div>
-                </div>
-                <div className="space-y-4">
-                  <h3 className="text-lg font-semibold">Meeting Schedule</h3>
-                  <div className="space-y-2">
-                    <p className="text-gray-400 flex items-center gap-2">
-                      <Calendar /> Every Wednesday @ 5:00 PM
-                    </p>
-                    <p className="text-gray-400">Open to all interested students!</p>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+{activeTab === "contact" && (
+  <Card className="mx-4 sm:mx-auto max-w-4xl">
+    <CardHeader>
+      <CardTitle>Get in Touch</CardTitle>
+      <CardDescription>
+        Join our community or reach out with questions
+      </CardDescription>
+    </CardHeader>
+    <CardContent>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="space-y-4">
+          <h3 className="text-base sm:text-lg font-semibold">Contact Information</h3>
+          <div className="space-y-2">
+            <p className="text-gray-400 flex items-center gap-2 text-sm sm:text-base">
+              <Mail /> ibf.bu@bennett.edu.in
+            </p>
+            <p className="text-gray-400 text-sm sm:text-base">Location: Bennett University</p>
+          </div>
+        </div>
+        <div className="space-y-4">
+          <h3 className="text-base sm:text-lg font-semibold">Meeting Schedule</h3>
+          <div className="space-y-2">
+            <p className="text-gray-400 flex items-center gap-2 text-sm sm:text-base">
+              <Calendar /> Every Wednesday @ 5:00 PM
+            </p>
+            <p className="text-gray-400 text-sm sm:text-base">Open to all interested students!</p>
+          </div>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
         )}
       </div>
     </div>
