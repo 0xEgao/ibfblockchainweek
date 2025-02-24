@@ -17,7 +17,7 @@ const EventGallery = () => {
       id: 2,
       url: "/images/g5.JPG",  // Updated path
       title: "DeFi Conference",
-      date: "February 28, 2025",
+      date: "February 28, 2024",
       description: "Latest innovations in decentralized finance",
       attendees: "300+ DeFi Experts"
     },
@@ -25,7 +25,7 @@ const EventGallery = () => {
       id: 3,
       url: "/images/g7.JPG",  // Updated path
       title: "Blockchain Developer Meetup",
-      date: "February 10, 2025",
+      date: "February 10, 2024",
       description: "Technical deep-dive into blockchain development",
       attendees: "200+ Developers"
     },
@@ -33,7 +33,7 @@ const EventGallery = () => {
       id: 4,
       url: "/images/g2.jpg",  // Updated path
       title: "NFT Exhibition",
-      date: "January 25, 2025",
+      date: "January 25, 2024",
       description: "Showcasing digital art on the blockchain",
       attendees: "170+ participants"
     },
