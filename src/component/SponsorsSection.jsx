@@ -104,7 +104,7 @@ const SponsorsSection = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12 relative">
           <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-500 via-blue-500 to-violet-500 text-transparent bg-clip-text">
-            Past Sponsors
+            Past Sponsors & Supporters 
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Join forces with industry leaders shaping the future of blockchain and Web3 technology

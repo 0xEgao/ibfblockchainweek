@@ -7,50 +7,50 @@ const WorkshopAgenda = () => {
   const agenda = [
     {
       day: "Day 1",
-      date: "15th April",
+      date: "14th April",
       time: "6:30 PM",
-      title: "Intro to Dapps using Solidity",
-      description: "A complete introduction to Solidity programming and Dapps (Decentralized Apps). You will get to know all about History and Working of Blockchain, Ethereum, EVM, Transactions, Gas Fees, Blockchain Wallets, NFTs and What exactly is a Dapp.",
+      title: "Blockchain & Solidity Foundations (6:30 PM – 8:30 PM) ",
+      description: " Kickstart your journey into blockchain with core principles and hands-on smart contract development in Solidity. This session covers the fundamentals of decentralized technology, Ethereum, and writing your first smart contract ",
       gradient: "from-purple-600 to-blue-600"
     },
     {
       day: "Day 2",
-      date: "16th April",
+      date: "15th April",
       time: "6:30 PM",
-      title: "Advanced Solidity concepts",
-      description: "Here you will learn about how Scalable Smart Contract Development. You will understand how to test and debug your Contracts and eventually Deploy them.",
+      title: "Deep Dive into Smart Contracts (6:30 PM – 8:30 PM)",
+      description: "Take your smart contract skills to the next level! Learn how to build secure, optimized, and scalable smart contracts while exploring best practices, gas optimization techniques, and security vulnerabilities in Solidity development.",
       gradient: "from-blue-600 to-cyan-600"
     },
     {
       day: "Day 3",
-      date: "17th April",
+      date: "16th April",
       time: "6:30 PM",
-      title: "Fullstack Blockchain Development",
-      description: "Now that you know how to write smart contracts, learn how to deploy them into production. We will understand how to use Frontend Frameworks and Wallets to finally launch your Dapp.",
+      title: "Smart Contract & Frontend Integration",
+      description: "Get hands-on experience in building full-stack decentralized applications (DApps). Learn how to seamlessly connect smart contracts with frontend frameworks, interact with blockchain networks, and create user-friendly Web3 applications.",
       gradient: "from-cyan-600 to-teal-600"
     },
     {
       day: "Day 4",
-      date: "18th April",
+      date: "17th April",
       time: "6:30 PM",
-      title: "Building a Voting Smart Contract",
-      description: "Practical session on developing a complete voting system using Smart Contracts. Learn about different blockchain platforms and their trade-offs.",
+      title: "Smart Contract Battle ⚔️",
+      description: "Enter the arena of smart contract development in this high-stakes challenge! Compete against fellow developers to design, optimize, and deploy the best smart contracts. Showcase your Solidity skills, tackle real-world blockchain scenarios, and emerge as the ultimate Web3 champion.",
       gradient: "from-teal-600 to-green-600"
     },
     {
       day: "Day 5",
-      date: "19th April",
+      date: "18th April",
       time: "6:30 PM",
-      title: "Smart Contract Auction",
-      description: "Time for Battle! In this event, You will be given a problem Auction smart contract along with all the details about the contract and related concepts.",
+      title: "Expert Session | Dr. Vimal Baghel",
+      description: "Gain valuable insights into blockchain specialization at BU and explore the future of decentralized technology with Dr. Vimal Baghel. This session will cover emerging trends, industry applications, and career opportunities in the blockchain ecosystem.",
       gradient: "from-green-600 to-emerald-600"
     },
     {
-      day: "Day 6",
-      date: "20th April",
+      day: "Day 6 & 7th  ",
+      date: "19th and 20th April",
       time: "6:30 PM",
-      title: "Blockchain Specialisation Workshop",
-      description: "Official Blockchain Specialisation in BU by Dr. Vimal Baghel: Blockchain Champion. Learn about career opportunities and industry applications.",
+      title: "24-Hour Blockchain Hackathon 🕛🚀 ",
+      description: "Put your blockchain skills to the test in an intense 24-hour hackathon! Build innovative decentralized solutions, collaborate with like-minded developers, and compete for exciting prizes. Whether you're a beginner or an expert, this is your chance to showcase your creativity and problem-solving abilities in the Web3 space.",
       gradient: "from-emerald-600 to-purple-600"
     }
   ];
