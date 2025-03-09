@@ -65,7 +65,7 @@ const LandingPage = () => {
 
             {/* Auth Buttons */}
             <div className="hidden md:flex items-center space-x-4">
-              <Button className="px-4 py-2" onClick={() => window.open('#', '_blank')}>Register</Button>
+              <Button className="px-4 py-2" onClick={() => window.open('https://lu.ma/2risnlos', '_blank')}>Register</Button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -127,7 +127,7 @@ const LandingPage = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
-              <Button onClick={() => window.open('#', '_blank')} className="text-base sm:text-lg ">Join Today</Button>
+              <Button onClick={() => window.open('https://lu.ma/2risnlos', '_blank')} className="text-base sm:text-lg ">Join Today</Button>
               <Button onClick={() => handleNavigate('workshop')} variant="outline" className="text-base sm:text-lg">Learn More</Button>
             </div>
 
