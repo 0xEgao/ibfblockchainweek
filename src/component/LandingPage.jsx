@@ -97,7 +97,7 @@ const LandingPage = () => {
                 <a onClick={() => handleNavigate('timeline')} className="text-gray-300 hover:text-white cursor-pointer">Timeline</a>
                 <a onClick={() => handleNavigate('workshop')} className="text-gray-300 hover:text-white cursor-pointer">Workshop</a>
                 <a onClick={() => handleNavigate('sponsors')} className="text-gray-300 hover:text-white cursor-pointer">Sponsors</a>
-                <Button onClick={() => window.open('#', '_blank')}>Register</Button>
+                <Button onClick={() => window.open('https://lu.ma/2risnlos', '_blank')}>Register</Button>
               </div>
             </div>
           )}
