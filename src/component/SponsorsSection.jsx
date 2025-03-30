@@ -1,36 +1,12 @@
 import React, { useState } from 'react';
 
 const SPONSORS_DATA = [
-  {
-    name: "Polygon",
-    image: "https://logowik.com/content/uploads/images/polygon-matic5119.jpg",
-    color: "from-indigo-600 to-blue-500"
-  },
+ 
   {
     name: "OpenBuild",
     image: "https://openbuild.xyz/favicon.png",
     color: "from-blue-600 to-indigo-500"
   },
-  {
-    name: "DoraHacks",
-    image: "https://lever-client-logos.s3.us-west-2.amazonaws.com/96f741d4-2424-47ad-8ac0-fd3b5f115d6d-1655773677290.png",
-    color: "from-violet-600 to-indigo-500"
-  },
-  {
-    name: "Spheron",
-    image: "/images/spherelogo.png",
-    color: "from-indigo-600 to-violet-500"
-  },
-  {
-    name: "Ethereum Foundation",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJN6loxqq4Bp4IxJvh_xSGg3JkwjxrlxRPbOenAMQ50mdGoyiGGi0AEwkxYlDrb6k9dso&usqp=CAU",
-    color: "from-blue-600 to-violet-500"
-  },
-  {
-    name: "Rise In",
-    image: "https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v97rpxhc3jddqt3ytpdf",
-    color: "from-violet-600 to-blue-500"
-  }
 ];
 
 const SponsorCard = ({ sponsor, isHovered, onHover, onLeave }) => (
@@ -104,7 +80,7 @@ const SponsorsSection = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12 relative">
           <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-500 via-blue-500 to-violet-500 text-transparent bg-clip-text">
-            Past Sponsors & Supporters 
+            Our Sponsors & Supporters 
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Join forces with industry leaders shaping the future of blockchain and Web3 technology
