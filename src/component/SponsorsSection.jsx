@@ -7,6 +7,26 @@ const SPONSORS_DATA = [
     image: "https://openbuild.xyz/favicon.png",
     color: "from-blue-600 to-indigo-500"
   },
+  {
+    name: "AssendEX",
+    image: "/images/assendx.jpeg",
+    color: "from-blue-600 to-indigo-500"
+  },
+  {
+    name: "Sui",
+    image: "/images/sui.jpg",
+    color: "from-blue-600 to-indigo-500"
+  },
+  {
+    name: "UniDao",
+    image: "/images/unidao.jpeg",
+    color: "from-blue-600 to-indigo-500"
+  },
+  {
+    name: "Jumbo Blokchain",
+    image: "/images/jumbo.jpeg",
+    color: "from-blue-600 to-indigo-500"
+  },
 ];
 
 const SponsorCard = ({ sponsor, isHovered, onHover, onLeave }) => (
