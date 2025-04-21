@@ -15,7 +15,7 @@ const ModernWorkshop = () => {
     {
       id: 2,
       title: "Limited Seats",
-      icon: "80",
+      icon: "90",
       description: "Exclusive group of learners",
       bgColor: "from-blue-600 to-indigo-500",
       shadowColor: "shadow-blue-500/50"
@@ -67,7 +67,7 @@ const ModernWorkshop = () => {
     BLOCKCHAIN WEEK 2025
   </h1>
   <p className="text-gray-400 text-base sm:text-lg md:text-xl max-w-2xl mx-auto hover:text-gray-300 transition-colors duration-300">
-    Join an exclusive cohort of 80 students for an immersive blockchain development journey. 
+    Join an exclusive cohort of 90 students for an immersive blockchain development journey. 
     Master Solidity, build dApps, and connect with industry leaders.
   </p>
 </div>
