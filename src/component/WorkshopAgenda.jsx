@@ -9,50 +9,43 @@ const WorkshopAgenda = () => {
       day: "Day 1",
       date: "14th April",
       time: "6:30 PM",
-      title: "Blockchain & Solidity Foundations (6:30 PM – 8:30 PM) ",
-      description: " Kickstart your journey into blockchain with core principles and hands-on smart contract development in Solidity. This session covers the fundamentals of decentralized technology, Ethereum, and writing your first smart contract ",
+      title: "Introduction to Blockchain and Smart Contracts (6:30 PM – 8:30 PM) ",
+      description: " Join Jay Vardhan Singh from OpenBuild for an enlightening session on blockchain fundamentals and smart contract basics from 6:30 PM to 8:30 PM. ",
       gradient: "from-purple-600 to-blue-600"
     },
     {
       day: "Day 2",
       date: "15th April",
       time: "6:30 PM",
-      title: "Deep Dive into Smart Contracts (6:30 PM – 8:30 PM)",
-      description: "Take your smart contract skills to the next level! Learn how to build secure, optimized, and scalable smart contracts while exploring best practices, gas optimization techniques, and security vulnerabilities in Solidity development.",
+      title: "Smart Contract Development in Solidity & Career Opportunities (6:30 PM – 8:30 PM)",
+      description: "Explore smart contract development with Mohit Bhat and discover career opportunities in the blockchain industry. This insightful session runs from 6:30 PM to 8:30 PM and is tailored to enhance your technical skills and professional knowledge.",
       gradient: "from-blue-600 to-cyan-600"
     },
     {
       day: "Day 3",
       date: "16th April",
       time: "6:30 PM",
-      title: "Smart Contract & Frontend Integration",
-      description: "Get hands-on experience in building full-stack decentralized applications (DApps). Learn how to seamlessly connect smart contracts with frontend frameworks, interact with blockchain networks, and create user-friendly Web3 applications.",
+      title: "Introduction to Jumbo Blockchain",
+      description: "Dive into the Jumbo Blockchain with Kanishak, learning about its unique capabilities from 6:30 PM to 8:30 PM. Participants have a chance to win a $500 bounty for projects that successfully integrate with the Jumbo Blockchain, adding a competitive edge to the learning experience.",
       gradient: "from-cyan-600 to-teal-600"
     },
     {
-      day: "Day 4",
-      date: "17th April",
-      time: "6:30 PM",
-      title: "Smart Contract Battle ⚔️",
-      description: "Enter the arena of smart contract development in this high-stakes challenge! Compete against fellow developers to design, optimize, and deploy the best smart contracts. Showcase your Solidity skills, tackle real-world blockchain scenarios, and emerge as the ultimate Web3 champion.",
-      gradient: "from-teal-600 to-green-600"
-    },
-    {
       day: "Day 5",
-      date: "18th April",
+      date: "17th April",
       time: "6:30 PM",
       title: "Expert Session | Dr. Vimal Baghel",
       description: "Gain valuable insights into blockchain specialization at BU and explore the future of decentralized technology with Dr. Vimal Baghel. This session will cover emerging trends, industry applications, and career opportunities in the blockchain ecosystem.",
       gradient: "from-green-600 to-emerald-600"
     },
     {
-      day: "Day 6 & 7th  ",
-      date: "19th and 20th April",
+      day: "Day 5",
+      date: "18th April",
       time: "6:30 PM",
-      title: "24-Hour Blockchain Hackathon 🕛🚀 ",
-      description: "Put your blockchain skills to the test in an intense 24-hour hackathon! Build innovative decentralized solutions, collaborate with like-minded developers, and compete for exciting prizes. Whether you're a beginner or an expert, this is your chance to showcase your creativity and problem-solving abilities in the Web3 space.",
-      gradient: "from-emerald-600 to-purple-600"
-    }
+      title: "Introduction to Sui Chain and Building on Sui",
+      description: "Engage in a two-day workshop focusing on the Sui Chain, where you'll learn to build decentralized applications. These sessions provide practical, hands-on experience in blockchain application development. ",
+      gradient: "from-teal-600 to-green-600"
+    },
+
   ];
 
   return (

@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 
 const SPONSORS_DATA = [
- 
+  {
+    name: "UniDao",
+    image: "/images/unidao.jpeg",
+    color: "from-blue-600 to-indigo-500"
+  },
   {
     name: "OpenBuild",
     image: "https://openbuild.xyz/favicon.png",
@@ -15,11 +19,6 @@ const SPONSORS_DATA = [
   {
     name: "Sui",
     image: "/images/sui.jpg",
-    color: "from-blue-600 to-indigo-500"
-  },
-  {
-    name: "UniDao",
-    image: "/images/unidao.jpeg",
     color: "from-blue-600 to-indigo-500"
   },
   {
